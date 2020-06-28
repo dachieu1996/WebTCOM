@@ -1,0 +1,44 @@
+<div class="group-head about">
+  <app-menu></app-menu>
+  <div class="head-tblC">
+    <div class="container">
+      <div class="icon text-center">
+        <img src="assets/images/icon-group-head1.png" alt="">
+      </div>
+      <!-- <h2 class="title">Tcom - Tech for life</h2> -->
+      <h2 class="title">{{contact.header}}</h2>
+      <!-- <div class="small-title">Chúng tôi là công ty công nghệ và dịch vụ phần mềm top 1 Việt Nam</div> -->
+      <div class="small-title">{{contact.subContent}}</div>
+    </div>
+  </div>
+</div>
+
+<div class="contact-address-info">
+  <div class="container">
+          <div class="child text-center">
+        <div class="main">Trụ sở</div>
+      <div class="main2">Tcom</div>
+      <!-- <p>
+        Địa chỉ: Số 26/92 Tổ 11, P. Hoàng Văn Thụ, Q. Hoàng Mai, Hà Nội, Việt Nam.
+      </p> -->
+      <!-- <p>
+        Điện thoại: 02439102030
+      </p>
+      <p>
+        Email: <a href="" class="RobotoMediumItalic textBlue3 textHoverWhite">info@tcom.vn</a>
+      </p> -->
+      <p>{{contact.address}}</p>
+      <p>{{contact.phone}}</p>
+      <p>{{contact.email}}</p>
+          </div>
+    </div>
+</div>
+<div class="contact-address-map">
+  <div class="container">
+    <h2 class="text-center text-uppercase title">Tìm chúng tôi trên google map</h2>
+    <div class="bg-iframe">
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14899.982449160212!2d105.8542611!3d20.992813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x85ac9ddcec447625!2zQ8OUTkcgVFkgQ-G7lCBQSOG6pk4gQ8OUTkcgTkdI4buGIFbDgCBUUlVZ4buATiBUSMOUTkcgVENPTQ!5e0!3m2!1sen!2s!4v1526550046994" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+      <iframe [src]="contact.mapUrl | safe" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>

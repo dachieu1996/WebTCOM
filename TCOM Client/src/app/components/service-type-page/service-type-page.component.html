@@ -1,0 +1,227 @@
+<div class="group-head mobile-development">
+  <app-menu></app-menu>
+  <div class="head-tblC">
+    <div class="container">
+      <div class="icon text-center">
+        <img src="images/icon-group-head3.png" alt="">
+      </div>
+      <h2 class="title">{{ serviceTypeDetail.mainHeader }}</h2>
+      <div class="small-title">{{ serviceTypeDetail.mainContent }}</div>
+      <ul class="list-mobile">
+        <ng-container *ngFor="let serviceSubDetail of serviceTypeDetail.serviceSubDetails">
+          <li>
+            <div>{{ serviceSubDetail.content }}</div>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+  <div class="listt-wrap">
+    <ul class="container listt">
+      <ng-container *ngFor="let serviceSubDetail of serviceTypeDetail.serviceSubDetails">
+        <li>
+          <div>{{ serviceSubDetail.content }}</div>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+</div>
+<div class="mobile-development-we-can">
+  <div class="container">
+    <div class="title">{{ serviceTypeDetail.expertiseHeader }}</div>
+    <div class="clearfix list">
+      <ng-container *ngFor="let expertise of serviceTypeDetail.expertises">
+        <div class="unit">
+          <div class="number">
+            {{expertise.order}}
+          </div>
+          <div class="small-des">{{expertise.content}}</div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
+<div class="our-technology mobile-development-technology">
+  <div class="container">
+    <div class="content">
+      <div class="title">Ngôn ngữ lập trình và công nghệ</div>
+      <div class="clearfix list">
+        <div class="tech hvr-float-shadow">
+          <div class="txc">
+            <div class="table">
+              <div class="table-cell">
+                <img src="images/android.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech hvr-float-shadow">
+          <div class="txc">
+            <div class="table">
+              <div class="table-cell">
+                <img src="images/java.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech hvr-float-shadow">
+          <div class="txc">
+            <div class="table">
+              <div class="table-cell">
+                <img src="images/cc++.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech hvr-float-shadow">
+          <div class="txc">
+            <div class="table">
+              <div class="table-cell">
+                <img src="images/iOS.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech hvr-float-shadow">
+          <div class="txc">
+            <div class="table">
+              <div class="table-cell">
+                <img src="images/objective-c.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech hvr-float-shadow">
+          <div class="txc">
+            <div class="table">
+              <div class="table-cell">
+                <img src="images/swift.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech hvr-float-shadow">
+          <div class="txc">
+            <div class="table">
+              <div class="table-cell">
+                <img src="images/react-native2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech hvr-float-shadow">
+          <div class="txc">
+            <div class="table">
+              <div class="table-cell">
+                <img src="images/socketio.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech hvr-float-shadow">
+          <div class="txc">
+            <div class="table">
+              <div class="table-cell">
+                <img src="images/socketcluster.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech hvr-float-shadow">
+          <div class="txc">
+            <div class="table">
+              <div class="table-cell">
+                <img src="images/websocket.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech hvr-float-shadow">
+          <div class="txc">
+            <div class="table">
+              <div class="table-cell">
+                <img src="images/webrtc-logo-vert-retro-255x305.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech hvr-float-shadow">
+          <div class="txc">
+            <div class="table">
+              <div class="table-cell">
+                <img src="images/SQLite370.svg.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech hvr-float-shadow">
+          <div class="txc">
+            <div class="table">
+              <div class="table-cell">
+                <img src="images/greenDAO.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech hvr-float-shadow">
+          <div class="txc">
+            <div class="table">
+              <div class="table-cell">
+                <img src="images/realm.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech hvr-float-shadow">
+          <div class="txc">
+            <div class="table">
+              <div class="table-cell">
+                <img src="images/eventbus.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="web-development-other-services">
+  <div class="container">
+    <div class="title">Các dịch vụ khác</div>
+    <div class="clearfix list">
+      <!-- <ng-container *ngFor='let service of serviceType'>
+        <div class="unit">
+          <a href="video-solutions.html" class="img">
+            <img [src]="baseUrl + service.iconUrl" alt="">
+          </a>
+          <div class="text"><a href="video-solutions.html">{{service.name}}</a></div>
+        </div>
+      </ng-container> -->
+      <div class="unit">
+        <a href="video-solutions.html" class="img">
+          <img src="../../../assets/images/other-services5.png" alt="">
+        </a>
+        <div class="text"><a href="video-solutions.html">Video Solutions</a></div>
+      </div>
+      <div class="unit">
+        <a href="realtime-solutions.html" class="img">
+          <img src="../../../assets/images/other-services4.png" alt="">
+        </a>
+        <div class="text"><a href="realtime-solutions.html">Realtime Solutions</a></div>
+      </div>
+      <div class="unit">
+        <a href="web-app-development.html" class="img">
+          <img src="../../../assets/images/other-services3.png" alt="">
+        </a>
+        <div class="text"><a href="web-app-development.html">Web App Development</a></div>
+      </div>
+      <div class="unit">
+        <a href="desktop-app-development.html" class="img">
+          <img src="../../../assets/images/other-services2.png" alt="">
+        </a>
+        <div class="text"><a href="desktop-app-development.html">Desktop App Development</a></div>
+      </div>
+    </div>
+  </div>
+</div>

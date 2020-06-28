@@ -1,0 +1,55 @@
+{
+    "menu": {
+        "home": "ホーム",
+        "introduction": "企業情報",
+        "service": "サービス",
+        "project": "ポートフォリオ",
+        "contact": "お問い合わせ"
+    },
+    "footer": {
+        "contact": "お問い合わせ",
+        "service": "サービス",
+        "menu": "コネクション",
+        "office": "Office"
+    },
+    "shared": {
+        "contact-now": "お問い合わせ",
+        "find-partner": "パートナーシップを見つけているお客様",
+        "find-partner-sub-1": "新しいソフトウェアプロジェクトを開発する",
+        "find-partner-sub-2": "既存システムの技術のアップグレード、変更、または更新する",
+        "find-partner-sub-3": "TCOMでリクエストに応じてプライベートチームを構築、管理、運営する",
+        "find-partner-sub-4": "TCOMのスタッフを雇い、お客様の会社のオフィスで直接働く",
+        "find-partner-slogan": "私たちはお客様とつながる準備ができています！"
+    },
+    "home": {
+        "contact-now": "お問い合わせ",
+        "detail": "詳細を見る",
+        "profession": "プロフェッショナル",
+        "renew": "イノベション",
+        "talent": "規律",
+        "experience": "熱心"
+    },
+    "introduction": {
+        "core-value": "コアの価値",
+        "faithful": "素直",
+        "conscientious": "熱心",
+        "discipline": "規律",
+        "profession": "プロフェッショナル",
+        "renew": "イノベション",
+        "share": "シェア",
+        "galary": "会社のイメージ"
+    },
+    "service": {
+      "introduction": "我々は以下のアウトソーシングサービスをご提供します",
+      "engagement-model": "連携の形式",
+      "labor": "LABOR",
+      "labor-line-1": "お客様はTCOMでリクエストに応じてプライベートチームを構築、管理、運営する。",
+      "labor-line-2": "ラボはプロジェクトの安定した人材確保します。お客様はTCOMのオフィスにいるまたは不在を選択できます。",
+      "project-based": "PROJECT-BASED",
+      "project-based-line-1": "プロジェクトごとに署名されたオフショア契約です。",
+      "project-based-line-2": "TCOMは、仕様書、技術アーキテクチャー、設計、開発、テスト、納品を含むプロジェクト開発プロセスにおけるチームとすべての活動を管理します。",
+      "onsite": "ONSITE",
+      "onsite-line-1": "TCOMの指定された人数のエンジニアは、プロジェクトの納期でお客様のオフィスで直接作業します。",
+      "onsite-line-2": ""
+    }
+}

@@ -1,0 +1,161 @@
+.our-technology {
+	min-height: 750px;background: url(../images/bg-technology.jpg)no-repeat center;background-size: cover;background-attachment: fixed;text-align: center;padding: 100px 0 50px;color: #fff;position: relative;
+	&:before {content: '';position: absolute;top: 0;left: 0;z-index: 1;width: 100%;height: 100%;background: rgba(43, 48, 56, 0.59);}
+	.content {position: relative;z-index: 2;}
+	.title1 {font-size: 35px;text-transform: uppercase;margin-bottom: 20px;}
+	.des {display: inline-block;font-size: 20px;max-width: 720px;margin-bottom: 50px;}
+	.list {
+		text-align: center;
+		.tech {
+			display:inline-block;margin: 10px 10px;
+			.txc {
+				width: 150px;height: 150px;margin: 0px auto 0;padding: 5px 15px;box-shadow: 0 0 5px #ccc;background: #fff;
+				.table {width: 100%;height: 100%;display: table;}
+				.table-cell {width: 100%;height: 100%;display: table-cell;vertical-align: middle;}
+				img {max-width: 100%;height: auto;max-height: 100px;}
+			}
+		}
+	}
+}
+.our-technology.web-development-technology {
+	color: #fff;
+	.title {font-size: 35px;text-transform: uppercase;margin-bottom: 15px;}
+	.dess,.dess-mobile {font-size: 20px;}
+	.dess-mobile {display: none;}
+	.list {
+		margin-top: 40px;
+		.tech {
+			.txc {width: 180px;height: 160px;}
+		}
+	}
+}
+.our-technology.mobile-development-technology {
+	color: #fff;
+	.title {font-size: 35px;text-transform: uppercase;margin-bottom: 15px;}
+	.dess,.dess-mobile {font-size: 20px;}
+	.dess-mobile {display: none;}
+	.list {
+		margin-top: 40px;
+		.tech {
+			.txc {width: 180px;height: 160px;}
+		}
+	}
+}
+.our-technology.desktop-development-technology {
+	color: #fff;
+	.title {font-size: 35px;text-transform: uppercase;margin-bottom: 15px;}
+	.dess {font-size: 20px;}
+	.list {
+		margin-top: 40px;
+		.tech {
+			.txc {width: 220px;height: 160px;}
+		}
+	}
+}
+.our-technology.realtime-technology {
+	color: #fff;
+	.title {font-size: 35px;text-transform: uppercase;margin-bottom: 15px;}
+	.dess,.dess-mobile {font-size: 20px;}
+	.dess-mobile {display: none;}
+	.list {
+		margin-top: 40px;
+		.tech {
+			.txc {width: 180px;height: 160px;}
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.our-technology {
+		.title1 {font-size: 28px;}
+		.title2 {font-size: 20px;}
+		.des {font-size: 17px;}
+		.list {
+			.tech {
+				margin: 10px 5px;
+				.txc {width: 132px !important;height: 140px !important;}
+			}
+		}
+	}
+	.our-technology.web-development-technology {
+		.title {font-size: 28px;}
+		.des {font-size: 14px;}
+		.dess {display: none;}
+		.dess-mobile {font-size: 17px;display: block;}
+	}
+	.our-technology.mobile-development-technology {
+		.title {font-size: 28px;}
+		.des {font-size: 14px;}
+		.dess {display: none;}
+		.dess-mobile {font-size: 17px;display: block;}
+	}
+	.our-technology.desktop-development-technology {
+		.title {font-size: 28px;}
+		.des {font-size: 14px;}
+		.dess {display: none;}
+		.dess-mobile {font-size: 17px;display: block;}
+	}
+	.our-technology.realtime-technology {
+		.title {font-size: 28px;}
+		.des {font-size: 14px;}
+		.dess {display: none;}
+		.dess-mobile {font-size: 17px;display: block;}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.our-technology {
+		.title1 {font-size: 28px;}
+		.title2 {font-size: 20px;}
+		.des {font-size: 17px;}
+		.list {
+			.tech {
+				width: 170px;margin: 6px 3px;
+			}
+		}
+	}
+	.our-technology.web-development-technology {
+		.title {font-size: 28px;}
+		.dess {display: none;}
+		.dess-mobile {font-size: 17px;display: block;}
+		.list {
+			.tech {
+				width: 170px;margin: 6px 3px;
+				.txc {width: 100%;}
+			}
+		}
+	}
+	.our-technology.mobile-development-technology {
+		.title {font-size: 28px;}
+		.dess {display: none;}
+		.dess-mobile {font-size: 17px;display: block;}
+		.list {
+			.tech {
+				width: 170px;margin: 6px 3px;
+				.txc {width: 100%;}
+			}
+		}
+	}
+	.our-technology.desktop-development-technology {
+		.title {font-size: 28px;}
+		.dess {display: none;}
+		.dess-mobile {font-size: 17px;display: block;}
+		.list {
+			.tech {
+				width: 190px;margin: 6px 7px;
+				.txc {width: 100%;}
+			}
+		}
+	}
+	.our-technology.realtime-technology {
+		.title {font-size: 28px;}
+		.dess {display: none;}
+		.dess-mobile {font-size: 17px;display: block;}
+		.list {
+			.tech {
+				width: 170px;margin: 6px 3px;
+				.txc {width: 100%;}
+			}
+		}
+	}
+}

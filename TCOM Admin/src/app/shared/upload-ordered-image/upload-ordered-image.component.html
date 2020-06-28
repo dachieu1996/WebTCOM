@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="container-fluid__content">
+    <div class="container-fluid__input-url">
+      <button type="file" mat-raised-button color="primary" (click)='fileInput.click()' style="margin-right: 5px;">
+        <i class="material-icons">cloud_upload</i> Upload Image
+      </button>
+      <input hidden (change)="onFileSelected($event)" [multiple]="multiple" #fileInput type="file" id="file" accept="image/*">
+      <button type="file" mat-raised-button color="warn" (click)='save()'>
+        <i class="material-icons">save</i> Save
+      </button>
+    </div>
+    <div class="container-fluid__wapper-image" id="container-image" [dragula]='"bag-images"'
+      [(dragulaModel)]='dataSource'>
+      <ng-container *ngFor="let data of dataSource">
+        <div *ngIf="!data.isDelete" [attr.id]="data.url" class="wap-img">
+          <img [src]="baseUrl + data.imgUrl">
+          <span class="fa-stack fa-lg" *ngIf='data.id' (click)='delete(data.id)' id="span1">
+            <i class="fa fa-circle fa-stack-2x" style="color: white;"></i>
+            <i class="fa fa-times fa-stack-1x" style="color: #797D7F;"></i>
+          </span>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

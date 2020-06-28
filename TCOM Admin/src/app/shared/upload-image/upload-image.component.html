@@ -1,0 +1,27 @@
+<form>
+  <div class="form-group">
+      <div class="form-group" [ngClass]='classFormGroup'>
+          <div>
+              <label>{{header}}</label>
+          </div>
+          <!-- {{imageError}} -->
+          <div class="custom-file fileInputProfileWrap">
+              <input type="file" #imageInput (change)="fileChangeEvent($event)" class="fileInputProfile" accept="image/*">
+              <div class="img-space"  (click)="imageInput.click()" [ngClass]='classStyler'>
+                  <ng-container *ngIf="isImageSaved; else elseTemplate">
+                      <img [src]="cardImageBase64"/>
+                  </ng-container>
+                  <ng-template #elseTemplate>
+                    <ng-container *ngIf="!src; else elseTemplate1">
+                        <img [src]="defaultSrc"/>
+                    </ng-container>
+                    <ng-template #elseTemplate1>
+                        <img [src]="baseUrl + src" class="img-responsive">
+                    </ng-template>
+                  </ng-template>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- <a class="btn btn-danger" (click)="removeImage()" *ngIf="isImageSaved">Remove</a> -->
+</form>

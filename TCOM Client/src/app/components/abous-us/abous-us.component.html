@@ -1,0 +1,168 @@
+<div class="group-head about">
+  <app-menu></app-menu>
+  <div class="head-tblC">
+    <div class="container">
+      <div class="icon text-center">
+        <img src="assets/images/icon-group-head1.png" alt="">
+      </div>
+      <!-- <h2 class="title">Tcom - Tech for life</h2>
+      <div class="small-title">Chúng tôi là công ty công nghệ và dịch vụ phần mềm top 1 Việt Nam</div> -->
+      <h2 class="title">{{introduction.mainHeader}}</h2>
+      <div class="small-title" [innerHTML]="introduction.mainContent"></div>
+    </div>
+  </div>
+</div>
+
+<div class="about-intro">
+  <div class="container">
+    <div class="title">Tcom</div>
+    <div class="des">
+    <!-- <p>TCOM thành lập năm 2012, bởi đội ngũ kỹ sư IT nhiều năm kinh nghiệm phát triển sản phẩm, cũng như thực hiện các dự án công nghệ với các đối tác Nhật Bản, Châu Âu, Mỹ.</p>
+
+    <p>TCOM quy tụ những con người tài năng, nhiệt huyết, đam mê, sáng tạo, tốt nghiệp từ những trường đại học hàng đầu Việt Nam.</p> -->
+    <p [innerHtml]='introduction.subContent'></p>
+    </div>
+    <!-- <div class="des-mobile">TCOM thành lập năm 2012, bởi đội ngũ kỹ sư IT nhiều năm kinh nghiệm phát triển sản phẩm, cũng như thực hiện các dự án công nghệ với các đối tác Nhật Bản, Châu Âu, Mỹ. TCOM quy tụ những con người tài năng, nhiệt huyết, đam mê, sáng tạo, tốt nghiệp từ những trường đại học hàng đầu Việt Nam.</div> -->
+    <div class="des-mobile" [innerHTML]='introduction.subContent'></div>
+    <div class="clearfix list">
+      <div class="unit">
+        <div class="img">
+          <!-- <img src="assets/images/about-intro1.jpg" alt=""> -->
+          <!-- <div class="text">Sứ mệnh</div> -->
+          <img [src]='baseUrlImg + introduction.leftImgUrl' alt="">
+          <div class="text">{{introduction.leftHeader}}</div>
+        </div>
+        <!-- <div class="name">Sứ mệnh</div> -->
+        <div class="name">{{introduction.leftHeader}}</div>
+        <!-- <div class="dess">Đổi mới không ngừng, tạo ra các sản phẩm tốt nhất, thúc đẩy cuộc sống phát triển</div> -->
+        <div class="dess">{{introduction.leftContent}}</div>
+      </div>
+      <div class="unit">
+        <div class="img">
+          <!-- <img src="assets/images/about-intro2.jpg" alt=""> -->
+          <!-- <div class="text">Tầm nhìn</div> -->
+          <img [src]='baseUrlImg + introduction.rightImgUrl' alt="">
+          <div class="text">{{introduction.rightHeader}}</div>
+        </div>
+        <!-- <div class="name">Tầm nhìn</div> -->
+        <div class="name">{{introduction.rightHeader}}</div>
+        <div class="dess">{{introduction.rightContent}}</div>
+        <!-- <div class="dess">Trở thành công ty công nghệ top 1 Việt Nam, và là công ty có uy tín, dẫn đầu trong lĩnh vực gia công phần mềm cho thị trường Nhật bản, Châu âu và Mỹ.</div> -->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="about-different">
+  <div class="container">
+    <div class="content">
+      <div class="title">{{ 'introduction.core-value' | translate }}</div>
+      <div class="clearfix list">
+        <div class="unit hvr-icon-grow">
+          <div class="img">
+            <img src="assets/images/icon-about-different1.png" alt="" class="hvr-icon">
+          </div>
+          <div class="text">{{ 'introduction.faithful' | translate }}</div>
+        </div>
+        <div class="unit hvr-icon-grow">
+          <div class="img">
+            <img src="assets/images/icon-about-different2.png" alt="" class="hvr-icon">
+          </div>
+          <div class="text">{{ 'introduction.conscientious' | translate }}</div>
+        </div>
+        <div class="unit hvr-icon-grow">
+          <div class="img">
+            <img src="assets/images/icon-about-different3.png" alt="" class="hvr-icon">
+          </div>
+          <div class="text">{{ 'introduction.discipline' | translate }}</div>
+        </div>
+        <div class="unit hvr-icon-grow">
+          <div class="img">
+            <img src="assets/images/icon-about-different4.png" alt="" class="hvr-icon">
+          </div>
+          <div class="text">{{ 'introduction.profession' | translate }}</div>
+        </div>
+        <div class="unit hvr-icon-grow">
+          <div class="img">
+            <img src="assets/images/icon-about-different5.png" alt="" class="hvr-icon">
+          </div>
+          <div class="text">{{ 'introduction.renew' | translate }}</div>
+        </div>
+        <div class="unit hvr-icon-grow">
+          <div class="img">
+            <img src="assets/images/icon-about-different6.png" alt="" class="hvr-icon">
+          </div>
+          <div class="text">{{ 'introduction.share' | translate }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="about-gallery">
+  <div class="container">
+    <div class="title">{{ 'introduction.galary' | translate }}</div>
+    <div class="clearfix list">
+      <ng-container *ngFor='let img of imgGallery'>
+        <a class="unit" data-fancybox="gallery" [href]="baseUrlImg + img.imgUrl">
+          <img [src]="baseUrlImg + img.imgUrl" alt="">
+        </a>
+      </ng-container>
+      <!-- <a class="unit" data-fancybox="gallery" href="assets/images/gallery/about-gallery7.jpg">
+        <img src="assets/images/gallery/about-gallery7.jpg" alt="">
+      </a>
+      <a class="unit" data-fancybox="gallery" href="assets/images/gallery/about-gallery4.jpg">
+        <img src="assets/images/gallery/about-gallery4.jpg" alt="">
+      </a>
+      <a class="unit" data-fancybox="gallery" href="assets/images/gallery/about-gallery11.jpg">
+        <img src="assets/images/gallery/about-gallery11.jpg" alt="">
+      </a>
+      <a class="unit" data-fancybox="gallery" href="assets/images/gallery/about-gallery8.jpg">
+        <img src="assets/images/gallery/about-gallery8.jpg" alt="">
+      </a>
+
+
+      <a class="unit" data-fancybox="gallery" href="assets/images/gallery/about-gallery6.jpg">
+        <img src="assets/images/gallery/about-gallery6.jpg" alt="">
+
+      </a>
+      <a class="unit" data-fancybox="gallery" href="assets/images/gallery/about-gallery9.jpg">
+        <img src="assets/images/gallery/about-gallery9.jpg" alt="">
+      </a> -->
+    </div>
+  </div>
+</div>
+<div class="feed-back">
+  <div class="container">
+    <div class="title">{{ 'shared.find-partner' | translate }}</div>
+    <ul class="list-inline clearfix list-feed">
+      <li>
+        <div class="icon">
+          <img src="assets/images/icon-feedback1.png" alt="">
+        </div>
+        <div class="text">{{ 'shared.find-partner-sub-1' | translate }}</div>
+      </li>
+      <li>
+        <div class="icon">
+          <img src="assets/images/icon-feedback2.png" alt="">
+        </div>
+        <div class="text">{{ 'shared.find-partner-sub-2' | translate }}</div>
+      </li>
+      <li>
+        <div class="icon">
+          <img src="assets/images/icon-feedback3.png" alt="">
+        </div>
+        <div class="text">{{ 'shared.find-partner-sub-3' | translate }}</div>
+      </li>
+      <li>
+        <div class="icon">
+          <img src="assets/images/icon-feedback4.png" alt="">
+        </div>
+        <div class="text">{{ 'shared.find-partner-sub-4' | translate }}</div>
+      </li>
+    </ul>
+    <div class="sub-title">{{ 'shared.find-partner' | translate }}</div>
+    <div class="contact">
+      <a href="contact-us.html" class="hvr-pulse-grow">{{ 'shared.contact-now' | translate }}</a>
+    </div>
+
+  </div>
+</div>

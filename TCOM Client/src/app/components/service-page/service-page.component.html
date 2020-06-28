@@ -1,0 +1,139 @@
+<div class="group-head services">
+  <app-menu></app-menu>
+  <div class="head-tblC">
+    <div class="container">
+      <div id="pentagon">
+        <div class="pent pen1"></div>
+        <div class="pent pen2"></div>
+        <div class="pent pen3"></div>
+        <div class="pent pen4"></div>
+        <div class="pent pen5"></div>
+        <div class="txt-center">{{'service.introduction' | translate}}</div>
+        <ng-container *ngFor='let service of serviceType; index as i'>
+          <div class="angelc" [class]="'angel'+(i+1)">
+            <a [routerLink]="'/service-type/' + service.id" class="icon">
+              <img [src]="baseUrl + service.iconUrl" alt="">
+            </a>
+            <div class="nam3"><a [routerLink]="'/service-type/' + service.id">{{service.name}}</a></div>
+          </div>
+        </ng-container>
+        <!-- <div class="angelc angel1">
+          <a href="web-app-development.html" class="icon">
+            <img src="assets/images/q1.png" alt="">
+          </a>
+          <div class="nam3"><a href="web-app-development.html">Web Application Development</a></div>
+        </div>
+        <div class="angelc angel2">
+          <a href="realtime-solutions.html" class="icon">
+            <img src="assets/images/q4.png" alt="">
+          </a>
+          <div class="nam3"><a href="realtime-solutions.html">Realtime Solutions</a></div>
+        </div>
+        <div class="angelc angel3">
+          <a href="mobile-app-development.html" class="icon">
+            <img src="assets/images/q2.png" alt="">
+          </a>
+          <div class="nam3"><a href="mobile-app-development.html">Mobile Application Development</a></div>
+        </div>
+        <div class="angelc angel4">
+          <a href="video-solutions.html" class="icon">
+            <img src="assets/images/q5.png" alt="">
+          </a>
+          <div class="nam3"><a href="video-solutions.html">Video Solutions</a></div>
+        </div>
+        <div class="angelc angel5">
+          <a href="desktop-app-development.html" class="icon">
+            <img src="assets/images/q3.png" alt="">
+          </a>
+          <div class="nam3"><a href="desktop-app-development.html">Desktop Application Development</a></div>
+        </div> -->
+      </div>
+      <ul class="listt list-unstyled clearfix">
+        <ng-container *ngFor='let service of serviceType'>
+          <li class="q1">
+            <a [routerLink]="'/service-type/' + service.id" class="img">
+              <img [src]="baseUrl + service.iconUrl" alt="">
+            </a>
+            <div class="text"><a [routerLink]="'/service-type/' + service.id">{{service.name}}</a></div>
+          </li>
+        </ng-container>
+        <!-- <li class="q1">
+          <a href="web-app-development.html" class="img">
+            <img src="assets/images/q1.png" alt="">
+          </a>
+          <div class="text"><a href="web-app-development.html">Web Application Development</a></div>
+        </li>
+        <li class="q2">
+          <a href="assets/mobile-app-development.html" class="img">
+            <img src="assets/images/q2.png" alt="">
+          </a>
+          <div class="text"><a href="assets/mobile-app-development.html">Mobile Application Development</a></div>
+        </li>
+        <li class="q3">
+          <a href="assets/desktop-app-development.html" class="img">
+            <img src="assets/images/q3.png" alt="">
+          </a>
+          <div class="text"><a href="assets/desktop-app-development.html">Desktop Application Development</a></div>
+        </li>
+        <li class="q4">
+          <a href="assets/realtime-solutions.html" class="img">
+            <img src="assets/images/q4.png" alt="">
+          </a>
+          <div class="text"><a href="assets/realtime-solutions.html">Realtime Solutions</a></div>
+        </li>
+        <li class="q4">
+          <a href="assets/video-solutions.html" class="img">
+            <img src="assets/images/q5.png" alt="">
+          </a>
+          <div class="text"><a href="video-solutions.html">Video Solutions</a></div>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="services-partner">
+  <div class="container">
+    <div class="title">
+      <span class="fa fa-handshake-o"></span>
+      <h2>{{ 'service.engagement-model' | translate }}</h2>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="unit">
+          <div class="tit">
+            <img src="images/z11.png" alt="">
+            <div>{{ 'service.labor' | translate }}</div>
+          </div>
+          <div class="des">
+            <div>{{ 'service.labor-line-1' | translate }}</div>
+            <div>{{ 'service.labor-line-2' | translate }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="unit">
+          <div class="tit">
+            <img src="images/z22.png" alt="">
+            <div>{{ 'service.project-based' | translate }}</div>
+          </div>
+          <div class="des">
+            <div>{{ 'service.project-based-line-1' | translate }}</div>
+            <div>{{ 'service.project-based-line-2' | translate }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="unit">
+          <div class="tit">
+            <img src="images/z33.png" alt="">
+            <div>{{ 'service.onsite' | translate }}</div>
+          </div>
+          <div class="des">
+            <div>{{ 'service.onsite-line-1' | translate }}</div>
+            <div>{{ 'service.onsite-line-2' | translate }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,89 @@
+.footer {
+	background: #2e2e2e;padding: 40px 0 50px;
+	.title {
+		text-transform: uppercase;color: #fff;border-bottom: 1px solid #484848;font-size: 19px;padding-bottom: 10px;margin-bottom: 30px;margin-top: 0;
+	}
+	.list-social {
+		margin-top: 45px;
+		> li {
+			> a {
+				display: inline-block;width: 34px;height: 34px;line-height: 32px;text-align: center;border-radius: 50%;background: #fff;color: #333;border: 2px solid transparent;
+				&:hover {border: 2px solid #379aff;}
+			}
+		}
+	}
+	.list-info {
+		> li {
+			margin-bottom: 20px;
+			img {float: left;margin: 2px 0 0;}
+			.des {
+				margin: 0 0 0 35px;color: #fff;font-family: OpenSansLight;font-size: 15px;
+				.email:hover {color: #fff;}
+			}
+		}
+	}
+	.list-menu {
+		> li {
+			> a {
+				color: #fff;font-family: OpenSansLight;font-size: 15px;display: inline-block;margin-bottom: 20px;
+				&:hover {color: #379aff;}
+			}
+			> a.active {color: #379aff;}
+		}
+	}
+	.footer-fi {float: left;width: 220px;margin-right: 100px;}
+	.footer-se {float: left;width: 315px;margin-right: 80px;}
+	.footer-th {float: left;width: 255px;margin-right: 80px;}
+	.footer-fo {float: left;width: 120px;}
+}
+.footer-bottom {
+	background: #272727;padding: 15px 0 0;font-size: 16px;color: #fff;
+	.copyright {margin-bottom: 10px;}
+	.list-language {
+		a {
+			display: inline-block;border: 1px solid transparent;padding: 2px;width: 24px;height: 18px;
+			img {vertical-align: top;}
+			&:hover {border: 1px solid #ccc;}
+		}
+		.active {border: 1px solid #fff;}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.footer {
+		.footer-fi {float: none;width: 100%;margin-right: 0;margin-bottom: 20px;} 
+		.footer-se,.footer-th, .footer-fo {float: none;width: 100%;margin-right: 0;}
+		.list-social {margin-top: 30px;}
+		.title {margin-top: 45px;font-size: 18px;}
+		.list-info {
+			> li {
+				.des {font-size: 14px;}
+			}
+		}
+	}
+	.footer-bottom {font-size: 14px;}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.footer {
+		padding: 40px 0 0;
+		.title {font-size: 18px;}
+		.footer-fi,.footer-se,.footer-th,.footer-fo {width: 45%;margin-right:5%;margin-bottom: 50px;}
+		.list-info {
+			> li {
+				.des {font-size: 14px;}
+			}
+		}
+	}
+	.footer-bottom {font-size: 14px;}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.footer {
+		padding: 40px 0 0;
+		.footer-fi,.footer-se,.footer-th,.footer-fo {width: 45%;margin-right:5%;margin-bottom: 50px;}
+	}
+}
+
+
+
+
+

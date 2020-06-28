@@ -1,0 +1,37 @@
+.portfolio-product {
+	padding: 65px 0 100px;
+	.unit {
+		margin: 0 0 30px;position: relative;overflow: hidden;box-shadow: 0 0 5px #d2d2d2;padding: 15px;
+		.img {
+			img {margin: 0 auto; height: 304px; width: 540px;}
+		}
+		.info {
+			color: #818181;margin-top: 15px;font-family: RobotoLight;font-size: 14px;
+			.big-name {
+				.name {font-size: 19px;font-family: RobotoMedium;margin-bottom: 10px;text-transform: uppercase;}
+				.tag {
+					margin-bottom: 10px;
+					.labe {color: #fff;background: #1eab3b;padding: 4px 6px;border-radius: 2px;font-size: 12.5px;margin-right: 3px;}
+				}
+			}
+			.sub {margin-bottom: 10px;height: 80px;overflow: hidden;}
+			.line {
+				margin-bottom: 5px;
+				.tit {font-family: RobotoMedium;float: left;}
+				.val {margin-left: 125px;display: block;}
+			}
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+} 
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}

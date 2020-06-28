@@ -1,0 +1,16 @@
+*.dll
+*.pdb
+**/obj
+**/bin
+obj/**
+bin/**
+
+
+*.ide
+*.ide-shm
+*.ide-wal
+*.txt
+*.lock
+*.suo
+*.config
+

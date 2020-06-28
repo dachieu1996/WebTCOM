@@ -1,0 +1,12 @@
+.contact-address-info {
+	padding: 100px 0;
+	.child {
+		border: 2px solid #0492e9;position: relative;padding: 20px 20px;
+		.main {
+			color: #fff;background: #0492e9;font-family: 'RobotoMedium';font-weight: 500;font-size: 20px;text-transform: uppercase;position: absolute;top: -22px;
+			left: 0;right: 0;width: 220px;height: 43px;line-height: 43px;margin: 0 auto;
+		}
+		.main2 {font-size: 30px;margin: 20px 0;text-transform: uppercase;}
+		p {font-size: 16px;}
+	}
+}

@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+.snackbar {
+    background: yellow;
+}
+
+.editor-field {
+    margin-bottom: 10px;
+}

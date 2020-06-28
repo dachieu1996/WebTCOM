@@ -1,0 +1,55 @@
+{
+  "menu": {
+    "home": "Trang chủ",
+    "introduction": "Giới thiệu",
+    "service": "Dịch vụ",
+    "project": "Dự án",
+    "contact": "Liên hệ"
+  },
+  "footer": {
+    "contact": "Liên hệ",
+    "service": "Các dịch vụ",
+    "menu": "Menu",
+    "office": "Văn phòng"
+  },
+  "shared": {
+    "contact-now": "Liên hệ ngay",
+    "find-partner": "BẠN ĐANG CÓ NHU CẦU TÌM KIẾM ĐỐI TÁC ĐỂ",
+    "find-partner-sub-1": "Phát triển dự án phần mềm mới",
+    "find-partner-sub-2": "Nâng cấp, thay đổi hoặc cập nhật công nghệ cho các hệ thống đã có",
+    "find-partner-sub-3": "Xây dựng, quản lý, vận hành một team riêng theo yêu cầu, đặt tại TCOM",
+    "find-partner-sub-4": "Thuê nhân sự của TCOM, làm việc trực tiếp tại văn phòng công ty bạn.",
+    "find-partner-slogan": "Chúng tôi sẵn sàng làm việc cùng bạn!"
+  },
+  "home": {
+    "contact-now": "Liên hệ ngay",
+    "detail": "Chi tiết",
+    "profession": "Chuyên nghiệp",
+    "renew": "Đổi mới",
+    "talent": "Tài năng",
+    "experience": "Kinh nghiệm"
+  },
+  "introduction": {
+    "core-value": "Giá trị cốt lõi",
+    "faithful": "Trung thực",
+    "conscientious": "Tận tâm",
+    "discipline": "Ký luật",
+    "profession": "Chuyên nghiệp",
+    "renew": "Đổi mới",
+    "share": "Chia sẻ",
+    "galary": "HÌNH ẢNH - SỰ KIỆN CÔNG TY"
+  },
+  "service": {
+    "introduction": "Chúng tôi cung cấp dịch vụ Outsourcing trong các lĩnh vực",
+    "engagement-model": "CÁC HÌNH THỨC HỢP TÁC",
+    "labor": "LABOR",
+    "labor-line-1": "Khách hàng xây dựng, quản lý, vận hành một team riêng theo yêu cầu, đặt tại TCOM.",
+    "labor-line-2": "Labor đảm bảo nhân lực ổn định cho dự án. Khách hàng có thể lựa chọn hình thức có mặt hoặc vắng mặt ở TCOM.",
+    "project-based": "PROJECT-BASED",
+    "project-based-line-1": "Là hình thức offshore mà hợp đồng được ký kết theo từng dự án.",
+    "project-based-line-2": "TCOM sẽ quản lý team và mọi hoạt động trong quy trình phát triển dự án bao gồm các tài liệu mô tả từ khách hàng, kiến trúc kỹ thuật, thiết kế, lập trình, kiểm thử, triển khai sản phẩm.",
+    "onsite": "ONSITE",
+    "onsite-line-1": "Đội ngũ kỹ sư của TCOM, với số lượng nhân sự nhất định, làm việc trực tiếp tại văn phòng công ty khách hàng, trong một giai đoạn cụ thể của dự án.",
+    "onsite-line-2": ""
+  }
+}

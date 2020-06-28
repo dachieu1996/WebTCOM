@@ -1,0 +1,288 @@
+<div class="group-head portfolio">
+  <app-menu></app-menu>
+  <div class="head-tblC">
+    <div class="container">
+      <div class="icon text-center">
+        <img [src]="baseUrl + porfolio.imgUrl" alt="">
+      </div>
+      <h2 class="title text-uppercase">{{porfolio.header}}</h2>
+      <div class="small-title">{{porfolio.subContent}}</div>
+    </div>
+  </div>
+</div>
+
+<div class="portfolio-product">
+  <div class="container container-project">
+    <ng-container *ngFor='let project of porfolios'>
+        <div class="container-unit">
+          <div class="unit">
+            <div class="img">
+              <img [src]="baseUrl + project.imgUrl" alt="" class="img-responsive">
+            </div>
+            <div class="info">
+              <div class="big-name">
+                <div class="name">{{project.header}}</div>
+                <div class="tag">
+                  <ng-container *ngFor="let item of project.task.split(', ')">
+                    <span class="labe">{{item}}</span>
+                  </ng-container>
+                </div>
+              </div>
+              <div class="sub">{{project.description}}</div>
+              <div class="line">
+                <span class="tit">Khách hàng</span>
+                <span class="val">{{project.customer}}</span>
+              </div>
+              <div class="line">
+                <span class="tit">URL</span>
+                <span class="val">{{project.url}}</span>
+              </div>
+              <div class="line">
+                <span class="tit">Công nghệ</span>
+                <span class="val">{{project.technology}}</span>
+              </div>
+              <div class="line">
+                <span class="tit">Nền tảng</span>
+                <span class="val">{{project.platform}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    <!-- <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="unit">
+          <div class="img">
+            <img src="assets/images/project/skystudio.jpg" alt="" class="img-responsive">
+          </div>
+          <div class="info">
+            <div class="big-name">
+              <div class="name">SkyStudio</div>
+              <div class="tag">
+                <span class="labe">desktop software</span>
+                <span class="labe">windows</span>
+              </div>
+            </div>
+            <div class="sub">Giải pháp livestream sử dụng trường quay ảo (3D virtual studio), chuyên nghiệp như làm truyền hình, dành cho các cá nhân, tổ chức, doanh nghiệp. SkyStudio có thể livestream lên facebook, youtube, twitter hay bất kỳ nền tảng video trực tuyến nào, với chất lượng tốt nhất, ổn định nhất.</div>
+            <div class="line">
+              <span class="tit">Khách hàng</span>
+              <span class="val">SkyStudio</span>
+            </div>
+            <div class="line">
+              <span class="tit">URL</span>
+              <span class="val">https://skystudio.tv</span>
+            </div>
+            <div class="line">
+              <span class="tit">Công nghệ</span>
+              <span class="val">C/C++, Qt, WebRTC, WebSocket, FFMPEG, Video & Audio Processing</span>
+            </div>
+            <div class="line">
+              <span class="tit">Nền tảng</span>
+              <span class="val">Window, MacOS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="unit">
+          <div class="img">
+            <img src="assets/images/project/skycam.jpg" alt="" class="img-responsive">
+          </div>
+          <div class="info">
+            <div class="big-name">
+              <div class="name">SkyCam</div>
+              <div class="tag">
+                <span class="labe">mobile app</span>
+                <span class="labe">iOS</span>
+                <span class="labe">android</span>
+              </div>
+            </div>
+            <div class="sub">Ứng dụng biến điện thoại, máy tính bảng thành camera chuyên nghiệp, không dây, không trễ. Sử dụng kết hợp với SkyStudio, qua Wifi.</div>
+            <div class="line">
+              <span class="tit">Khách hàng</span>
+              <span class="val">SkyStudio</span>
+            </div>
+            <div class="line">
+              <span class="tit">URL</span>
+              <span class="val">https://skystudio.tv</span>
+            </div>
+            <div class="line">
+              <span class="tit">Công nghệ</span>
+              <span class="val">C/C++, Objective-C, Java</span>
+            </div>
+            <div class="line">
+              <span class="tit">Nền tảng</span>
+              <span class="val">iOS, Android</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="unit">
+          <div class="img">
+            <img src="assets/images/project/skymit.jpg" alt="" class="img-responsive">
+          </div>
+          <div class="info">
+            <div class="big-name">
+              <div class="name">SkyMit</div>
+              <div class="tag">
+                <span class="labe">service</span>
+                <span class="labe">web</span>
+              </div>
+            </div>
+            <div class="sub">Giải pháp hội nghị trực tuyến, với đầy đủ các công cụ cộng tác (Video & audio chất lượng HD, Chat, Whiteboard, Slideshow, Screen Sharing, Document Sharing), hoàn toàn nền tảng web. SkyMit giúp các tổ chức, doanh nghiệp lập lịch và triển khai các cuộc họp, đào tạo, phỏng vấn từ xa nhanh chóng, tiết kiệm, hiệu quả.</div>
+            <div class="line">
+              <span class="tit">Khách hàng</span>
+              <span class="val">SkyMit</span>
+            </div>
+            <div class="line">
+              <span class="tit">URL</span>
+              <span class="val">https://skymit.net</span>
+            </div>
+            <div class="line">
+              <span class="tit">Công nghệ</span>
+              <span class="val">NodeJS, WebRTC, SocketCluster, WebSocket, ReactJS, Redis, MySQL, Bootstrap CSS</span>
+            </div>
+            <div class="line">
+              <span class="tit">Nền tảng</span>
+              <span class="val">Window, MacOS, Mobile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="unit">
+          <div class="img">
+            <img src="assets/images/project/edcity.jpg" alt="" class="img-responsive">
+          </div>
+          <div class="info">
+            <div class="big-name">
+              <div class="name">EdCity</div>
+              <div class="tag">
+                <span class="labe">platform</span>
+                <span class="labe">web</span>
+              </div>
+            </div>
+            <div class="sub">Nền tảng giáo dục trực tuyến (Online Education Platform) với đầy đủ các công cụ để xây dựng lớp học trực tuyến, biên soạn bài giảng, lên lịch kiểm tra, đánh giá... EdCity giúp các tổ chức, doanh nghiệp dễ dàng tạo ra các lớp học có độ tương tác hai chiều cao giữa người dạy và người học nhờ các công cụ như video & voice call, chat, whiteboard...</div>
+            <div class="line">
+              <span class="tit">Khách hàng</span>
+              <span class="val">Hinode Network</span>
+            </div>
+            <div class="line">
+              <span class="tit">URL</span>
+              <span class="val">https://edcity.io</span>
+            </div>
+            <div class="line">
+              <span class="tit">Công nghệ</span>
+              <span class="val">NodeJS, WebRTC, SocketCluster, WebSocket, ReactJS, Redis, MySQL, Streaming Video Technology, Upload & Store Video Technology</span>
+            </div>
+            <div class="line">
+              <span class="tit">Nền tảng</span>
+              <span class="val">Windows, MacOS, Mobile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="unit">
+          <div class="img">
+            <img src="assets/images/project/skybot.jpg" alt="" class="img-responsive">
+          </div>
+          <div class="info">
+            <div class="big-name">
+              <div class="name">SkyBot</div>
+              <div class="tag">
+                <span class="labe">service</span>
+                <span class="labe">web</span>
+              </div>
+            </div>
+            <div class="sub">SkyBot giúp chủ shop xây dựng và quản lý các trợ lý bán hàng tự động một cách nhanh chóng, chuyên nghiệp, triển khai lên các fanpage facebook dễ dàng nhất. SkyBot được phát triển dựa trên nền tảng kỹ thuật mạnh mẽ, ứng dụng các kỹ thuật máy học (Machine Learning) và kỹ thuật xử lý ngôn ngữ tự nhiên (NLP).</div>
+            <div class="line">
+              <span class="tit">Khách hàng</span>
+              <span class="val">SkyBot</span>
+            </div>
+            <div class="line">
+              <span class="tit">URL</span>
+              <span class="val">https://skybot.vn</span>
+            </div>
+            <div class="line">
+              <span class="tit">Công nghệ</span>
+              <span class="val">WebRTC, NodeJS, Angular, MySQL, Redis, NLP processing</span>
+            </div>
+            <div class="line">
+              <span class="tit">Nền tảng</span>
+              <span class="val">Windows, MacOS, Mobile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="unit">
+          <div class="img">
+            <img src="assets/images/project/skybiz.jpg" alt="" class="img-responsive">
+          </div>
+          <div class="info">
+            <div class="big-name">
+              <div class="name">SkyBiz</div>
+              <div class="tag">
+                <span class="labe">service</span>
+                <span class="labe">web</span>
+              </div>
+            </div>
+            <div class="sub">Hệ thống bán hàng bằng tiếp thị liên kết (affiliate) chuyên nghiệp, dễ sử dụng, với các công cụ quản lý đơn hàng, khách hàng chuyên nghiệp, các thống kê báo cáo đầy đủ, trực quan. SkyBiz đang được dùng để phân phối sản phẩm SkyStudio.</div>
+            <div class="line">
+              <span class="tit">Khách hàng</span>
+              <span class="val">SkyStudio</span>
+            </div>
+            <div class="line">
+              <span class="tit">URL</span>
+              <span class="val">https://skybiz.io</span>
+            </div>
+            <div class="line">
+              <span class="tit">Công nghệ</span>
+              <span class="val">NodeJS, LoopBack, MariaDB, Redis, ReactJS</span>
+            </div>
+            <div class="line">
+              <span class="tit">Nền tảng</span>
+              <span class="val">Window, MacOS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="unit">
+          <div class="img">
+            <img src="assets/images/project/upstream.jpg" alt="" class="img-responsive">
+          </div>
+          <div class="info">
+            <div class="big-name">
+              <div class="name">UpStream</div>
+              <div class="tag">
+                <span class="labe">mobile app</span>
+                <span class="labe">iOS</span>
+                <span class="labe">android</span>
+              </div>
+            </div>
+            <div class="sub">Mạng xã hội livestream. Người dùng live từ mobile của mình, bạn bè có thể xem, bình luận, tặng quà và tương tác với nhau. Hệ thống có thể đáp ứng hàng triệu người dùng.</div>
+            <div class="line">
+              <span class="tit">Khách hàng</span>
+              <span class="val">UpStream</span>
+            </div>
+            <div class="line">
+              <span class="tit">Công nghệ</span>
+              <span class="val">NodeJS, LoopBack, MariaDB, Redis, ReactJS</span>
+            </div>
+            <div class="line">
+              <span class="tit">Nền tảng</span>
+              <span class="val">iOS, Android</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>

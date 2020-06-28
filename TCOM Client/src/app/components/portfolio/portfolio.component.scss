@@ -1,0 +1,21 @@
+$breakpoint-unit: 992px;
+.container-project {
+  display: flex;
+  flex-wrap: wrap;
+  .container-unit {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media(min-width: $breakpoint-unit) {
+  .container-project {
+    display: flex;
+    flex-wrap: wrap;
+    .container-unit {
+      width: 50%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}

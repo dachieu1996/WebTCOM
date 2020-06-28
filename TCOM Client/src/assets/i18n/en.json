@@ -1,0 +1,55 @@
+{
+  "menu": {
+    "home": "Home",
+    "introduction": "About Us",
+    "service": "Services",
+    "project": "Projects",
+    "contact": "Contact Us"
+  },
+  "footer": {
+    "contact": "Contact",
+    "service": "Services",
+    "menu": "Menu",
+    "office": "Office"
+  },
+  "shared": {
+    "contact-now": "Contact Us",
+    "find-partner": "YOU ARE IN NEED OF FORMING A PARTNERSHIP TO",
+    "find-partner-sub-1": "Develop new software project.",
+    "find-partner-sub-2": "Upgrade, change or update technology for existing systems.",
+    "find-partner-sub-3": "Build, manage, operate a private team on request, located at TCOM.",
+    "find-partner-sub-4": "Hire TCOM’s staff who’s willing to work directly at your company office.",
+    "find-partner-slogan": "We are ready to connect with you!"
+  },
+  "home": {
+    "contact-now": "Contact Us",
+    "detail": "More detail",
+    "profession": "Professional",
+    "renew": "Innovation",
+    "talent": "Talents",
+    "experience": "Experience"
+  },
+  "introduction": {
+    "core-value": "Core values",
+    "faithful": "Honesty",
+    "conscientious": "Conscientiousness",
+    "discipline": "Discipline",
+    "profession": "Professional",
+    "renew": "Innovation",
+    "share": "Share",
+    "galary": "GALLERY"
+  },
+  "service": {
+    "introduction": "The outsourcing services we provide",
+    "engagement-model": "ENGAGEMENT MODELS",
+    "labor": "LABOR",
+    "labor-line-1": "You can build and manage a dedicated team with qualified resources at TCOM to work exclusively for your project.",
+    "labor-line-2": "Labor guarantees stable human resources. You can choose to be present or absent at TCOM.",
+    "project-based": "PROJECT-BASED",
+    "project-based-line-1": "The contract is signed for each project.",
+    "project-based-line-2": "The team and all project development activities from documentation of requirements, technical architecture, UI design, programming, testing, deployment and support are managed by TCOM.",
+    "onsite": "ONSITE",
+    "onsite-line-1": "TCOM’s team, which includes a fixed number of members, work directly at your offices for a specified period.",
+    "onsite-line-2": ""
+  }
+}

@@ -1,0 +1,72 @@
+<div class="footer">
+  <div class="container">
+    <div class="footer-fi">
+      <a href="#" class="logo">
+        <img src="assets/images/footer-logo.png" alt="">
+      </a>
+      <ul class="list-inline list-social">
+        <li>
+          <a href=""><span class="fa fa-facebook"></span></a>
+        </li>
+        <li>
+          <a href=""><span class="fa fa-twitter"></span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-se">
+      <h4 class="title">{{ 'footer.contact' | translate }}</h4>
+      <ul class="list-unstyled list-info">
+        <li>
+          <img src="assets/images/footer-icon1.png" alt="">
+          <div class="des"><strong>{{ 'footer.office' | translate }}:</strong> Tầng 9, Tòa nhà 389-391 Trường Chinh,
+            Khương Trung, Thanh Xuân
+            Hà Nội, Việt Nam</div>
+        </li>
+        <li>
+          <img src="assets/images/footer-icon2.png" alt="">
+          <div class="des">+84-24-3910-2030</div>
+        </li>
+        <li>
+          <img src="assets/images/footer-icon3.png" alt="">
+          <div class="des">
+            <a href="#" class="textBlue email">info@tcom.vn</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-th">
+      <h4 class="title">{{ 'footer.service' | translate }}</h4>
+      <ul class="list-unstyled list-menu">
+        <li><a href="web-app-development.html">Web App Development</a></li>
+        <li><a href="mobile-app-development.html">Mobile App Development</a></li>
+        <li><a href="desktop-app-development.html">Desktop App Development</a></li>
+        <li><a href="realtime-solutions.html">Realtime Solutions</a></li>
+        <li><a href="video-solutions.html">Video Solutions</a></li>
+      </ul>
+    </div>
+    <div class="footer-fo">
+      <h4 class="title">{{ 'footer.menu' | translate }}</h4>
+      <ul class="list-unstyled list-menu">
+        <ng-container *ngFor="let menuItem of menuItems">
+          <li><a [href]="menuItem.routerLink">{{menuItem.title | translate}}</a></li>
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="clearfix">
+      <div class="pull-left copyright">Copyright © {{ currentYear }} by TCOM</div>
+      <div class="pull-right">
+        <ul class="list-inline list-language">
+          <ng-container *ngFor='let language of dataLanguage'>
+            <li>
+              <a class="btn-language" data-lang="" [ngClass]="{'active': selectedLanguageId == language.id}" (click)='saveLocalStorage(language)'><img [src]="baseUrl + language.imgUrl" alt=""></a>
+            </li>
+          </ng-container>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

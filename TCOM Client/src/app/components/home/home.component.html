@@ -1,0 +1,140 @@
+<div class="group-head">
+  <app-menu></app-menu>
+  <div class="head-tblC">
+    <div class="container">
+      <!-- <h2 class="title top title-home">Chúng tôi là công ty</h2>
+      <h2 class="title title-home">công nghệ và dịch vụ phần mềm top 1 Việt Nam</h2> -->
+      <h2 class="title top title-home">
+        <div [innerHTML]="home.mainHeader"></div>
+      </h2>
+      <h2 class="title-mobile">
+        <div [innerHTML]="home.mainHeader"></div>
+      </h2>
+      <h3 class="des"></h3>
+      <div class="action">
+        <a href="contact-us" class="contact hvr-grow">{{ 'home.contact-now' | translate }}</a>
+        <a href="about-us" class="detail hvr-grow">{{ 'home.detail' | translate }}</a>
+      </div>
+      <ul class="list-inline list">
+        <li>
+          <div class="icon fi hvr-bounce-in">
+            <img src="assets/images/icon-group1.png" alt="">
+          </div>
+          <div class="text">{{ 'home.profession' | translate }}</div>
+        </li>
+        <li>
+          <div class="icon se hvr-bounce-in">
+            <img src="assets/images/icon-group2.png" alt="">
+          </div>
+          <div class="text">{{ 'home.renew' | translate }}</div>
+        </li>
+        <li>
+          <div class="icon th hvr-bounce-in">
+            <img src="assets/images/icon-group3.png" alt="">
+          </div>
+          <div class="text">{{ 'home.talent' | translate }}</div>
+        </li>
+        <li>
+          <div class="icon fo hvr-bounce-in">
+            <img src="assets/images/icon-group4.png" alt="">
+          </div>
+          <div class="text">{{ 'home.experience' | translate }}</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <span class="fa fa-angle-down anker"></span>
+</div>
+<div class="our-service">
+  <div class="container">
+    <div class="title">{{home.serviceHeader}}</div>
+    <div class="big-des">{{home.serviceContent}}</div>
+    <div class="clearfix list">
+      <ng-container *ngFor="let serviceTypeDetail of serviceTypeDetails">
+        <div class="unit">
+          <div class="img">
+            <img [src]="baseUrl + serviceTypeDetail.smallImgUrl" alt="">
+          </div>
+          <div class="name">{{ serviceTypeDetail.mainHeader }}</div>
+          <div class="des">{{serviceTypeDetail.mainContent}}</div>
+          <div class="detail">
+            <a [href]="'service-type/'+ serviceTypeDetail.id" class="hvr-icon-wobble-horizontal">
+              <span>{{ 'home.detail' | translate }}</span>
+              <span class="fa fa-angle-right hvr-icon"></span>
+            </a>
+          </div>
+        </div>
+      </ng-container>
+
+    </div>
+  </div>
+</div>
+<div class="our-technology">
+  <div class="container">
+    <div class="content">
+      <div class="title1">{{home.techHeader}}</div>
+      <div class="title2"></div>
+      <div class="des">{{home.techContent}}</div>
+      <div class="clearfix list">
+        <ng-container *ngFor="let item of programmingLanguages">
+          <div class="tech hvr-float-shadow">
+            <div class="txc">
+              <div class="table">
+                <div class="table-cell">
+                  <img [src]="baseUrl + item" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="partner">
+  <div class="container">
+    <div class="title">{{home.partnerHeader}}</div>
+    <div class="des">{{home.partnerContent}}</div>
+    <ul class="list-inline list">
+      <ng-container *ngFor='let image of imgPartners'>
+        <li class="hvr-grow-shadow"><img [src]="baseUrl + image.imgUrl" alt=""></li>
+      </ng-container>
+    </ul>
+  </div>
+</div>
+<div class="feed-back">
+  <div class="container">
+    <div class="title">{{ 'shared.find-partner' | translate }}</div>
+    <ul class="list-inline clearfix list-feed">
+      <li>
+        <div class="icon">
+          <img src="assets/images/icon-feedback1.png" alt="">
+        </div>
+        <div class="text">{{ 'shared.find-partner-sub-1' | translate }}</div>
+      </li>
+      <li>
+        <div class="icon">
+          <img src="assets/images/icon-feedback2.png" alt="">
+        </div>
+        <div class="text">{{ 'shared.find-partner-sub-2' | translate }}</div>
+      </li>
+      <li>
+        <div class="icon">
+          <img src="assets/images/icon-feedback3.png" alt="">
+        </div>
+        <div class="text">{{ 'shared.find-partner-sub-3' | translate }}</div>
+      </li>
+      <li>
+        <div class="icon">
+          <img src="assets/images/icon-feedback4.png" alt="">
+        </div>
+        <div class="text">{{ 'shared.find-partner-sub-4' | translate }}</div>
+      </li>
+    </ul>
+    <div class="sub-title">{{ 'shared.find-partner' | translate }}</div>
+    <div class="contact">
+      <a href="contact-us.html" class="hvr-pulse-grow">{{ 'shared.contact-now' | translate }}</a>
+    </div>
+
+  </div>
+</div>

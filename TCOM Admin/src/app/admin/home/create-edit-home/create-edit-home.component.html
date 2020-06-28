@@ -1,0 +1,52 @@
+
+<div style="margin-top: 20px;"></div>
+<form>
+  <mat-form-field class="example-full-width">
+    <mat-label>Title</mat-label>
+    <input matInput [(ngModel)]="input.title" name="title">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Description</mat-label>
+    <textarea matInput [(ngModel)]="input.description" name="description"></textarea>
+  </mat-form-field>
+
+  <div class="editor-field">
+    <label>Main Header</label>
+    <app-editor [(input)]="input.mainHeader" name='mainHeader'></app-editor>
+  </div>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Main Content</mat-label>
+    <textarea matInput [(ngModel)]="input.mainContent" name="maincontent"></textarea>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Service Header</mat-label>
+    <input matInput [(ngModel)]='input.serviceHeader' name="serviceheader">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label >Service Content</mat-label>
+    <textarea matInput [(ngModel)]="input.serviceContent" name="servicecontent"></textarea>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label >Tech Header</mat-label>
+    <textarea matInput [(ngModel)]="input.techHeader" name="techHeader"></textarea>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label >Tech Content</mat-label>
+    <textarea matInput [(ngModel)]="input.techContent" name="techContent"></textarea>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label >Partner Header</mat-label>
+    <textarea matInput [(ngModel)]="input.partnerHeader" name="partnerHeader"></textarea>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label >Partner Content</mat-label>
+    <textarea matInput [(ngModel)]="input.partnerContent" name="partnerContent"></textarea>
+  </mat-form-field>
+  <div class="wap-upload">
+    <app-upload-image [baseUrl]='baseUrl' [src]='input.firstImgUrl' header="First Image" (onUpload)="uploadFirstImage($event)"></app-upload-image>
+    <mat-divider [vertical]="true"></mat-divider>
+    <app-upload-image [baseUrl]='baseUrl' [src]='input.sencondImgUrl' header="Second Image" (onUpload)="uploadSecondImage($event)"></app-upload-image>
+  </div>
+  <button mat-raised-button color="warn" id="btnsave" (click)="onSubmit()">Submit</button>
+</form>

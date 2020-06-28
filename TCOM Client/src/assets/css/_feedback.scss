@@ -1,0 +1,57 @@
+.feed-back {
+	.title {text-align: center;color: #2e2e2e;font-size: 35px;text-transform: uppercase;margin: 100px 0 60px;}
+	.list-feed {
+		text-align: center;
+		li {
+			width: 23%;margin: 0 1%;float: left;
+			.icon {width: 180px;height: 117px;line-height: 117px;display: inline-block;border: 0.5px solid rgba(237, 237, 237, 0.5);border-radius: 10px;background: #fff;box-shadow: 0 0 45px #cecaca;margin-bottom: 25px;}
+			.text {font-family: RobotoLight;font-size: 18px;color: #757575;height: 80px;margin-bottom: 50px;}
+		}
+	}
+	.sub-title {font-size: 35px;color: #2e2e2e;margin-bottom: 40px;text-align: center;}
+	.contact {
+		text-align: center;margin-bottom: 100px;
+		a {display: inline-block;text-transform: uppercase;color: #fff;font-family: OpenSansSemiBold;font-size: 18px;background: #1eab3b;border-radius: 8px;padding: 15px 115px 10px;}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.feed-back {
+		.title,.sub-title {font-size: 28px;}
+		.list-feed {
+			li {
+				width: 100%;margin: 0 0 15px;float: none;
+				.text {font-size: 17px;height: auto;}
+			}
+		}
+		.contact {
+			a {padding: 12px 0px 10px;width: 90%;font-size: 14px;}
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.feed-back {
+		.title,.sub-title {font-size: 30px;}
+		.list-feed {
+			li {
+				width: 44%;margin: 0 3%;
+				.icon img {zoom: 0.9;}
+				.text {
+					height: auto;font-size: 16px;
+				}
+			}
+		}
+		.contact a {font-size: 16px;padding: 13px 100px 10px;}
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.feed-back {
+		.list-feed {
+			li {
+				.text {
+					height: auto;
+				}
+			}
+		}
+	}
+}

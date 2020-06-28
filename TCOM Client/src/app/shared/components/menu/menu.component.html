@@ -1,0 +1,41 @@
+<div class="header-contain">
+  <div class="container">
+    <div class="header">
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right list-lang unvisible-mobile">
+            <ng-container *ngFor='let language of dataLanguage'>
+              <li>
+                <a class="btn-language" data-lang="" [class.active]="selectedLanguageId == language.id" (click)='saveLocalStorage(language)'><img [src]="baseUrl + language.imgUrl" alt=""></a>
+              </li>
+            </ng-container>
+          </ul>
+          <ul class="list-menu-header">
+            <ng-container *ngFor="let menuItem of menuItems">
+              <li routerLinkActive="current_page_item" [routerLinkActiveOptions]="{exact:false}"><a [routerLink]="[menuItem.routerLink]">{{menuItem.title | translate}}</a></li>
+            </ng-container>
+          </ul>
+          <ul class="nav navbar-nav navbar-right list-lang unvisible-ipad">
+            <ng-container *ngFor='let language of dataLanguage'>
+              <li>
+                <a class="btn-language" data-lang="" [ngClass]="{'active': selectedLanguageId == language.id}" (click)='saveLocalStorage(language)'><img [src]="baseUrl + language.imgUrl" alt=""></a>
+              </li>
+            </ng-container>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>

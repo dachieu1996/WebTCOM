@@ -1,0 +1,64 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="card">
+        <div class="card-body">
+          <div style="margin-top: 20px;"></div>
+          <div class="row">
+            <input type="hidden" [(ngModel)]="id">
+            <div class="col-md-4">
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Mã ngôn ngữ" [(ngModel)]="code">
+              </mat-form-field>
+            </div>
+            <div class="col-md-4">
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Tên ngôn ngữ" [(ngModel)]="name">
+              </mat-form-field>
+            </div>
+            <div class="col-md-2">
+                <app-upload-image #uploadImageComponent class="style-upload-flag" [baseUrl]='baseUrl' [src]='imgUrl' (onUpload)="uploadImage($event)" header='Thêm ảnh'></app-upload-image>
+            </div>
+            <div class="col-md-2">
+              <button mat-raised-button color="warn" id="btnsave" (click)="onSave()">Lưu</button>
+              <button mat-raised-button (click)="onCancel()">Hủy</button>
+            </div>
+          </div>
+          <div class="row">
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+              <ng-container matColumnDef="code">
+                <th mat-header-cell *matHeaderCellDef> Mã ngôn ngữ </th>
+                <td mat-cell *matCellDef="let element"> {{element.code}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Tên ngôn ngữ </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="image">
+                <th mat-header-cell *matHeaderCellDef> Hình ảnh </th>
+                <td mat-cell *matCellDef="let element">
+                  <img [src]='baseUrl + element.imgUrl'/>
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="action">
+                <th mat-header-cell *matHeaderCellDef> Action </th>
+                <td mat-cell *matCellDef="let element"> 
+                  <i class="fas fa-edit" (click)='onEdit(element.id)'></i> 
+                  <i class="fas fa-trash" (click)='onDelete(element.id)'></i> 
+                </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,82 @@
+.slide {
+	padding: 90px 0;
+	.title {
+		text-align: center;font-size: 35px;color: #2e2e2e;margin-bottom: 20px;
+	}
+	.slide-class {
+		.slick-arrow {
+			border: 2px solid #2a3e3e;border-radius: 50%;font-size: 0;color: #2a3e3e;outline: none;background: #fff;width: 45px;height: 45px;overflow: hidden;position: absolute;top: 28%;z-index: 69;
+			&:before {position: absolute;z-index: 69;display: inline-block;font: normal normal normal 14px/1 FontAwesome;font-size: 30px;text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+			&:hover {
+				border: 2px solid #379aff;
+				&:before {color: #379aff;}
+			}
+		}
+		.slick-prev {
+			left: 0;
+			&:before {content: "\f104";top: 6px;left: 13px;}
+		}
+		.slick-next {
+			right: 0;
+			&:before {content: "\f105";top: 6px;left: 17px;}
+		}
+		.slick-dots {
+			padding: 0;position: absolute;bottom: 0;left: 0;right: 0;z-index: 69;text-align: center;list-style: none;
+			li {
+				display: inline-block;
+				button {font-size: 0;background: transparent;outline: none;border: 1px solid #2a3e3e;display: inline-block;width: 10px;height: 10px;border-radius: 50%;padding: 0;margin: 0 7px;}
+			}
+			li.slick-active {
+				button {background: #2a3e3e;}
+			}
+		}
+		.slide-unit {
+			outline: none;text-align: center;margin: 0 45px;
+			.avatar {
+				width: 100px;height: 100px;border-radius: 50%;overflow: hidden;margin: 0 auto 30px;
+				img {width: 100%;height: 100%;max-width: 100%;max-height: 100%;}
+			}
+			.star {
+				height: 18px;width: 138px;margin: 0 auto 20px;
+				.vote {height: 100%;background: #fff url(../images/star.png) no-repeat;margin: 0 auto;}
+			}
+			.des {
+				font-size: 17px;color: #818181;margin: 0 auto 10px;
+				p {margin-bottom: 0px;}
+			}
+			.name {text-transform: uppercase; font-family: OpenSansSemiBold;color: #379aff;font-size: 20px;margin-bottom: 60px;}
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.slide {
+		padding-bottom: 0;
+		.title {font-size: 28px;}
+		.slide-class {
+			.slide-unit {
+				.des {font-size: 14px;}
+				.name {font-size: 17px;}
+			}
+			.slick-arrow {width: 35px;height: 35px;}
+			.slick-prev:before {top: 0;left: 8px;}
+			.slick-next:before {top: 0;left: 12px;}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.slide {
+		.title {font-size: 30px;}
+		.slide-class {
+			.slide-unit { 
+				.des {
+					font-size: 15px;
+				}
+			}
+			.slick-arrow {width: 35px;height: 35px;}
+			.slick-prev:before {top: 0;left: 8px;}
+			.slick-next:before {top: 0;left: 12px;}
+		}
+	}
+}
